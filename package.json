@@ -1,0 +1,64 @@
+{
+  "name": "vs-code-ext-express-api-gen",
+  "displayName": "express api generator",
+  "description": "express generate from npm",
+  "publisher": "KeshavSoft",
+  "type": "module",
+  "version": "1.1.1",
+  "engines": {
+    "vscode": "^1.116.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keshavsoft/vs-code-ext-boilerplate.git"
+  },
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.simple",
+        "title": "Express BoilerPlate with simple"
+      },
+      {
+        "command": "extension.simpleWithCrud",
+        "title": "Express BoilerPlate with simple crud functionality"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.simple",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@1"
+        },
+        {
+          "command": "extension.simpleWithCrud",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@1"
+        }
+      ],
+      "editor/context": [],
+      "editor/title": []
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.116.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  },
+  "dependencies": {
+    "@keshavsoft-org/express-todo": "^1.7.6"
+  }
+}
