@@ -4,7 +4,7 @@
   "description": "express generate from npm",
   "publisher": "KeshavSoft",
   "type": "module",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "engines": {
     "vscode": "^1.116.0"
   },
@@ -20,29 +20,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.simple",
-        "title": "Express BoilerPlate with simple"
-      },
-      {
-        "command": "extension.simpleWithCrud",
-        "title": "Express BoilerPlate with simple crud functionality"
+        "command": "extension.editor.title.appjs.startEndpoint",
+        "title": "StartEndpoint"
       }
     ],
     "menus": {
-      "explorer/context": [
-        {
-          "command": "extension.simple",
-          "when": "explorerResourceIsFolder",
-          "group": "navigation@1"
-        },
-        {
-          "command": "extension.simpleWithCrud",
-          "when": "explorerResourceIsFolder",
-          "group": "navigation@1"
-        }
-      ],
+      "explorer/context": [],
       "editor/context": [],
-      "editor/title": []
+      "editor/title": [
+        {
+          "command": "extension.editor.title.appjs.startEndpoint",
+          "when": "resourceFilename == app.js",
+          "group": "navigation@2"
+        }
+      ]
     }
   },
   "scripts": {
