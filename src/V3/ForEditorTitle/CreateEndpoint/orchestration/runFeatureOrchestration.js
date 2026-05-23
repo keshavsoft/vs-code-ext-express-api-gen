@@ -1,10 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 import * as vscode from 'vscode';
+
+import StartEndPoint from "kschema-api-gen-appjs";
+
 import { fileURLToPath } from 'url';
 import { copyTemplate } from '../services/copyTemplate.js';
-import { updateAppJs } from '../services/updateAppJs/index.js';
-// import { updateAppUse } from '../services/updateAppJs/forUse.js';
 
 export async function runFeatureOrchestration({ context }) {
     const endpoint = await getEndpoint();
@@ -18,19 +19,14 @@ export async function runFeatureOrchestration({ context }) {
         templatePath: fileURLToPath(new URL('../templates/Base', import.meta.url))
     };
 
-    // inside runFeatureOrchestration
-    copy({
-        templatePath: localContext.templatePath,
-        routeFilePath: localContext.routeFilePath,
-        endpointFolder: localContext.endpointFolder
-    });
+    const funcToRun = await StartEndPoint();
 
-    updateAppJs({ appJsPath: localContext.appJsPath, endpoint });
- 
-    // updateAppUse({
-    //     appJsPath: context.appJsPath,
-    //     useLine: `app.use('/${endpoint}', routerFrom${endpoint});`
-    // });
+    await funcToRun({
+        showLog: true,
+        isAnnounce: true,
+        folderName: endpoint,
+        toPath: localContext.targetPath
+    });
 
     return { endpoint };
 }
