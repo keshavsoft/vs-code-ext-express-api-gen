@@ -1,5 +1,5 @@
-import { registerAllCommands as ForEditorTitle } from './ForEditorTitle/registerCommands.js';
+import { registerAllCommands as appJsFileCommands } from "./ForEditorTitle/appJsFileCommands.js";
 
 export function registerAllCommands(context) {
-    ForEditorTitle(context);
+    appJsFileCommands(context);
 };
