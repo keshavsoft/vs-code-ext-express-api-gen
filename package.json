@@ -4,7 +4,7 @@
   "description": "express generate from npm",
   "publisher": "KeshavSoft",
   "type": "module",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "engines": {
     "vscode": "^1.116.0"
   },
@@ -15,6 +15,10 @@
     "type": "git",
     "url": "https://github.com/keshavsoft/vs-code-ext-express-api-gen.git"
   },
+  "bugs": {
+    "url": "https://github.com/keshavsoft/vs-code-ext-express-api-gen/issues"
+  },
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=KeshavSoft.vs-code-ext-express-api-gen",
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
