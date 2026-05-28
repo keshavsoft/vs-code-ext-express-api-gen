@@ -1,60 +1,137 @@
-# EndPointGen VS Code Extension
+# vs-code-ext-express-api-gen 🚀
 
-## Overview
+AI-assisted Express API Generator Extension for Visual Studio Code.
 
-**EndPointGen** is a Visual Studio Code extension developed by **KeshavSoft** focused on **AI-assisted server-side development using Node.js and Express**.  
-It helps developers quickly generate endpoints, sub-routes, and API structure directly from the Explorer context menu.
-
----
-
-## Demo
-
-![Demo](Docs/Information/demo.gif)
+Quickly create Express routes, endpoints, and modular API structures directly from the VS Code Title Bar and Explorer context menu.
 
 ---
 
-## Installation
+# ✨ Overview
 
-1. Open VS Code  
-2. Go to Extensions  
-3. Search: **EndPointGen**  
-4. Click Install  
+**vs-code-ext-express-api-gen** is a Visual Studio Code extension developed by **KeshavSoft** to simplify backend development using **Node.js** and **Express.js**.
 
----
-
-## Features
-
-- Generate Express.js API structure instantly  
-- Create endpoints in `app.js` with minimal effort  
-- Add modular sub-routes in `routes.js`  
-- Inject endpoint logic into `.js` files  
-- Context-aware right-click actions in Explorer  
-- Modular orchestration-based architecture  
+This extension helps developers rapidly generate API structures with minimal manual coding.
 
 ---
 
-## Commands
+# 🎯 Main Purpose
 
-| Command                  | Title             | Description                                               |
-|--------------------------|-------------------|-----------------------------------------------------------|
-| extension.initJs         | Initiate Node API | Initializes base Express server structure                |
-| extension.createEndpoint | CreateEndpoint    | Creates a new route entry in `app.js`                    |
-| extension.addSubRoute    | AddSubRoute       | Registers sub-route modules in `routes.js`               |
-| extension.addEndPoint    | AddEndPoint       | Injects endpoint logic into selected `.js` file          |
+The extension provides a quick way to create Express endpoints directly from the VS Code interface.
+
+Using the **StartEndPoint** option from the VS Code Title Bar, developers can instantly generate route structures inside `app.js`.
 
 ---
 
-## Usage
+# ⚡ Features
 
-- Open your Node.js project in VS Code  
-- Right-click on a file or folder  
-- Select a command from the context menu  
-- Extension generates/updates files automatically  
+✅ Generate Express.js API structure instantly
+✅ Create route entries automatically in `app.js`
+✅ Start endpoints directly from VS Code Title Bar
+✅ Reduce repetitive backend setup work
+✅ Modular route generation support
+✅ Beginner-friendly development workflow
+✅ Faster API development process
 
 ---
 
-## Example
+# 🖼️ Workflow
 
-**Before**
+### Start Endpoint from VS Code
+
+1. Click **StartEndPoint** from the VS Code Title Bar
+2. Enter endpoint name
+
+Example:
+
+```bash
+V1
+```
+
+3. Extension automatically creates route configuration inside `app.js`
+
+---
+
+# 📁 Folder Structure
+
+```bash
+vs-code-ext-express-api-gen
+│
+├── .vscode
+├── archive
+├── Docs
+├── node_modules
+├── src
+├── test
+│
+├── extension.js
+├── package.json
+├── README.md
+└── CHANGELOG.md
+```
+
+---
+
+# 🛠️ Command
+
+| Command         | Description                           |
+| --------------- | ------------------------------------- |
+| `StartEndPoint` | Creates a new route entry in `app.js` |
+
+---
+
+# 🚀 Example
+
+## Input
+
+When prompted:
+
+```bash
+V1
+```
+
+## Generated Output
+
 ```js
-// No routes
+app.use("/V1", require("./src/V1/routes"));
+```
+
+---
+
+# 💡 Why Use This Extension?
+
+* Save backend development time
+* Avoid repetitive route creation
+* Quickly bootstrap Express APIs
+* Maintain clean project structure
+* Improve development productivity
+
+---
+
+# 🧠 Built With
+
+* Node.js
+* Express.js
+* JavaScript
+* VS Code Extension API
+
+---
+
+# 📄 License
+
+MIT License
+
+---
+
+# 👨‍💻 Author
+
+Developed by **KeshavSoft**
+
+---
+
+# ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repository
+* 🍴 Fork the project
+* 🚀 Share with developers
