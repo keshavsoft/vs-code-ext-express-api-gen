@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VS Code Extension Documentation</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI, Arial, sans-serif;
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.7;
+}
+
+.container{
+width:95%;
+max-width:1200px;
+margin:auto;
+padding:30px;
+}
+
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:48px;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#cbd5e1;
+max-width:850px;
+margin:auto;
+}
+
+.badges{
+margin-top:25px;
+}
+
+.badge{
+display:inline-block;
+background:#1e293b;
+padding:8px 14px;
+border-radius:10px;
+margin:5px;
+font-size:14px;
+color:#38bdf8;
+}
+
+.card{
+background:#020617;
+margin-top:30px;
+padding:30px;
+border-radius:18px;
+box-shadow:0 6px 25px rgba(0,0,0,.5);
+}
+
+.card h2{
+color:#38bdf8;
+margin-bottom:20px;
+font-size:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.feature{
+background:#0f172a;
+padding:20px;
+border-radius:14px;
+border:1px solid #1e293b;
+transition:.3s;
+}
+
+.feature:hover{
+transform:translateY(-5px);
+border-color:#38bdf8;
+}
+
+.feature h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th,td{
+border:1px solid #1e293b;
+padding:14px;
+text-align:left;
+}
+
+th{
+background:#0f172a;
+color:#38bdf8;
+}
+
+.code{
+background:#0f172a;
+padding:18px;
+border-radius:12px;
+margin-top:15px;
+overflow:auto;
+font-family:Consolas;
+}
+
+img{
+width:100%;
+margin-top:20px;
+border-radius:14px;
+box-shadow:0 4px 20px rgba(0,0,0,.5);
+}
+
+button{
+background:#38bdf8;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+font-weight:bold;
+margin-top:15px;
+}
+
+button:hover{
+background:#0ea5e9;
+}
+
+footer{
+text-align:center;
+margin-top:60px;
+padding:30px;
+color:#94a3b8;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero">
+
+<h1>VS Code Extension</h1>
+
+<p>
+AI-assisted extension for rapidly generating Express.js APIs,
+routes directly inside Visual Studio Code title bar.
+</p>
+
+<div class="badges">
+
+<div class="badge">Node.js</div>
+<div class="badge">Express.js</div>
+<div class="badge">VS Code Extension</div>
+<div class="badge">JavaScript</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>✨ Features</h2>
+
+<div class="grid">
+
+<div class="feature">
+<h3>Route Generator</h3>
+<p>Create Express routes automatically.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🛠 Commands</h2>
+
+<table>
+
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>StartEndPoint</td>
+<td>Create Express route entry</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>🚀 Generated Route Example</h2>
+
+<div class="code">
+
+app.use("/V1", require("./src/V1/routes"));
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📁 Project Structure</h2>
+
+<div class="code">
+
+ProjectName
+│
+├── Public
+├── src
+├── V1
+├── app.js
+├── server.js
+├── routes.js
+└── package.json
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>💡 Benefits</h2>
+
+<div class="grid">
+
+<div class="feature">
+<h3>Fast Development</h3>
+<p>Reduce repetitive backend coding.</p>
+</div>
+
+<div class="feature">
+<h3>Clean Architecture</h3>
+<p>Maintain modular Express structure.</p>
+</div>
+
+<div class="feature">
+<h3>Developer Friendly</h3>
+<p>Easy workflow for beginners and teams.</p>
+</div>
+
+<div class="feature">
+<h3>VS Code Integration</h3>
+<p>Works directly inside the editor.</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+Made with ❤ by KeshavSoft
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
