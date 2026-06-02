@@ -6,33 +6,12 @@ Quickly create Express routes, endpoints, and modular API structures directly fr
 
 ---
 
-# ✨ Overview
-
-**vs-code-ext-express-api-gen** is a Visual Studio Code extension developed by **KeshavSoft** to simplify backend development using **Node.js** and **Express.js**.
-
-This extension helps developers rapidly generate API structures with minimal manual coding.
-
----
-
 # 🎯 Main Purpose
-
-The extension provides a quick way to create Express endpoints directly from the VS Code interface.
 
 Using the **StartEndPoint** option from the VS Code Title Bar, developers can instantly generate route structures inside `app.js`.
 
 ---
 
-# ⚡ Features
-
-✅ Generate Express.js API structure instantly
-✅ Create route entries automatically in `app.js`
-✅ Start endpoints directly from VS Code Title Bar
-✅ Reduce repetitive backend setup work
-✅ Modular route generation support
-✅ Beginner-friendly development workflow
-✅ Faster API development process
-
----
 
 # 🖼️ Workflow
 
@@ -48,25 +27,35 @@ V1
 ```
 
 3. Extension automatically creates route configuration inside `app.js`
+---
+
+## Generated Output
+
+```js
+app.use("/V1", require("./src/V1/routes"));
+```
 
 ---
 
 # 📁 Folder Structure
 
-```bash
-vs-code-ext-express-api-gen
+```bash id="n6y4qp"
+vs-code-ext-boilerplate
 │
 ├── .vscode
-├── archive
-├── Docs
+├── Config
+├── Public
 ├── node_modules
-├── src
-├── test
-│
-├── extension.js
+├── .env
+├── .env.local
+├── app.js
+├── config.json
+├── configLoader.js
+├── package-lock.json
 ├── package.json
-├── README.md
-└── CHANGELOG.md
+├── port.js
+├── routes.js
+└── server.js
 ```
 
 ---
@@ -79,29 +68,10 @@ vs-code-ext-express-api-gen
 
 ---
 
-# 🚀 Example
-
-## Input
-
-When prompted:
-
-```bash
-V1
-```
-
-## Generated Output
-
-```js
-app.use("/V1", require("./src/V1/routes"));
-```
-
----
-
 # 💡 Why Use This Extension?
 
 * Save backend development time
 * Avoid repetitive route creation
-* Quickly bootstrap Express APIs
 * Maintain clean project structure
 * Improve development productivity
 
@@ -109,10 +79,11 @@ app.use("/V1", require("./src/V1/routes"));
 
 # 🧠 Built With
 
-* Node.js
-* Express.js
+* Node.js (https://nodejs.org)
+* Express.js (https://expressjs.com)
+* VS Code Extension API (https://code.visualstudio.com/)
 * JavaScript
-* VS Code Extension API
+* HTML5
 
 ---
 
@@ -122,16 +93,28 @@ MIT License
 
 ---
 
-# 👨‍💻 Author
-
-Developed by **KeshavSoft**
-
----
-
 # ⭐ Support
 
-If you like this project:
+* ⭐ Star the Repository
 
-* ⭐ Star the repository
-* 🍴 Fork the project
-* 🚀 Share with developers
+  ```md
+  (https://github.com/keshavsoft/vs-code-ext-express-api-gen)
+  ```
+
+* 🍴 Fork the Repository
+
+  ```md
+  (https://github.com/your-username/vs-code-ext-express-api-gen/fork)
+  ```
+
+* 🚀 Share with Developers
+
+  ```md
+  (https://marketplace.visualstudio.com/items?itemName=KeshavSoft.vs-code-ext-express-api-gen)
+  ```
+
+* 🛒 VS Code Marketplace Extension
+
+  ```md
+  (https://marketplace.visualstudio.com/items?itemName=KeshavSoft.vs-code-ext-express-api-gen)
+  ```
