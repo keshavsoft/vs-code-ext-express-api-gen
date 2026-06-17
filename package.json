@@ -4,7 +4,7 @@
   "description": "express generate from npm",
   "publisher": "KeshavSoft",
   "type": "module",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "engines": {
     "vscode": "^1.116.0"
   },
